@@ -3,7 +3,8 @@ const ejs = require ('ejs')
 var bodyParser = require('body-parser'); 
 
 var app = express() 
-, server = require('http').createServer(app);
+, server = require('http').createServer(app) 
+, io = io.listen(server);
 app.set('view engine', 'ejs'); 
 app.use('/static', express.static('./static'));
 app.use(bodyParser.json()); 
