@@ -12,7 +12,7 @@ app.get('/',function (req, res, next) {
     res.render('index',{}); 
 }); 
     
-app.listen(1337,()=>{
+app.listen(80,()=>{
     console.log('Разработка сайтов')
 })
 
