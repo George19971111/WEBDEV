@@ -14,7 +14,5 @@ app.get('/',function (req, res, next) {
     res.render('index',{}); 
 }); 
     
-server.listen(80,()=>{
-    console.log('Разработка сайтов')
-})
+
 
